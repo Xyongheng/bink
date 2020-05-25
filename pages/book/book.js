@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bookList: []
+    bookList: [],
+    searching: false,
   },
 
   /**
@@ -20,6 +21,11 @@ Page({
       console.log(res)
     })
 
+  },
+  toSearch(event) {
+    this.setData({
+      searching: true
+    })
   },
 
   /**
