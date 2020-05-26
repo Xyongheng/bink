@@ -55,6 +55,13 @@
   border: none;
 }
 
+.close{
+  height: 36px;
+  width: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
 .cancel-img {
   width: 28rpx;
   height: 28rpx;
@@ -141,6 +148,6 @@
   border-bottom-right-radius: 15px;
   display: inline-block;
   height: 68rpx;
-  width: 500rpx;
+  width: 480rpx;
   font-size: 28rpx;
 }

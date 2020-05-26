@@ -2,9 +2,9 @@
   <v-book book="{{item}}"></v-book>
 </block>      -->
 
-<view wx:if="{{!searchimg}}" class="container">
+<view wx:if="{{!searching}}" class="container">
   <view class="header">
-    <view class="box">
+    <view bind:tap="toSearch" class="box">
       <image scr="/images/icon/search.png" />
       <text>搜索书籍</text>
     </view>
@@ -13,10 +13,10 @@
     <image class="head-img" src="/images/book/quality.png" />
     <view class="books-container">
       <block wx:for="{{bookList}}" wx:key="id">
-        <v-book book="{{item}}"></v-book>
+        <v-book showLike="{{true}}" book="{{item}}"></v-book>
       </block>
     </view>
   </view>
 </view>
 
-<v-search wx:else></v-search>
+<v-search more="{{more}}" bind:cancel="onCancel" wx:else></v-search>

@@ -29,6 +29,6 @@ Component({
       this.triggerEvent('tapping',{
         text: this.properties.text
       })
-    }
+    },
   }
 })
